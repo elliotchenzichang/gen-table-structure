@@ -1,0 +1,8 @@
+package {{.PackageName}}
+
+
+type {{.StructName}} struct {
+    {{- range $i, $v := .Meta }}
+        {{$v.CamelName}} {{$v.DataTypeInGo}}
+    {{- end }}
+}
